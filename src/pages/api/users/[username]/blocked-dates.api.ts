@@ -34,7 +34,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   })
 
   const blockedWeekDays = [0, 1, 2, 3, 4, 5, 6].filter((weekDay) => {
-    return !availableWeekDays.some(availableWeekDay => availableWeekDay.week_day === weekDay)
+    return !availableWeekDays.some((availableWeekDay: { week_day: number }) => availableWeekDay.week_day === weekDay)
   })
 
   const blockedDatesRaw: Array<{ date: number }> = await prisma.$queryRaw`
