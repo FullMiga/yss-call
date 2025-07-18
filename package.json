@@ -9,17 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
+    "@isz-dsystem/react": "^3.1.2",
+    "@prisma/client": "^6.11.1",
+    "@tanstack/react-query": "^5.83.0",
+    "@types/cookie": "^0.6.0",
+    "@types/nookies": "^1.1.0",
+    "axios": "^1.10.0",
+    "dayjs": "^1.11.13",
+    "googleapis": "^153.0.0",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.4",
+    "next-auth": "^4.24.11",
+    "next-seo": "^6.8.0",
+    "nookies": "^2.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "react-hook-form": "^7.59.0",
+    "zod": "^3.25.71"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
-    "@eslint/eslintrc": "^3"
+    "prisma": "^6.11.1",
+    "typescript": "^5"
   }
 }
