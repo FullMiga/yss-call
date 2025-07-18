@@ -66,7 +66,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   })
 
   const availableTimes = possibleTimes.filter(time => {
-    const isTimeBlocked = blockedTimes.some(blockedTime => blockedTime.date.getHours() === time);
+    const isTimeBlocked = blockedTimes.some((blockedTime: { date: Date }) => blockedTime.date.getHours() === time);
 
     const isTimeInPast = referenceDate.set('hour', time).isBefore(new Date());
 
